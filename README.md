@@ -225,7 +225,6 @@ SuiSplit integrates with Sui blockchain smart contracts for:
 
 ### Project Structure
 
-
 suisplit/
 ├── sui_back/                    # Main project directory
 │   ├── backend/                 # Backend API server
