@@ -225,44 +225,27 @@ SuiSplit integrates with Sui blockchain smart contracts for:
 
 ### Project Structure
 
-suisplit/
-├── sui_back/                    # Main project directory
-│   ├── backend/                 # Backend API server
-│   │   ├── src/                 # Backend source code
-│   │   ├── node_modules/        # Backend dependencies
-│   │   ├── package.json         # Backend dependencies & scripts
-│   │   ├── package-lock.json    # Backend lock file
-│   │   └── .env                 # Backend environment variables
-│   └── frontend/                # Frontend React application
-│       ├── src/                 # Frontend source code
-│       │   ├── components/      # React components
-│       │   │   ├── Dashboard/   # Dashboard related components
-│       │   │   ├── Expenses/    # Expense management components
-│       │   │   ├── Layout/      # Layout components (NavBar, etc.)
-│       │   │   ├── ParticipantBalances/  # Balance display components
-│       │   │   └── Wallet/      # Wallet integration components
-│       │   ├── context/         # React contexts (WalletContext)
-│       │   ├── pages/           # Page components
-│       │   ├── styles/          # Global CSS styles
-│       │   ├── sui/             # Sui blockchain integration
-│       │   │   ├── client.ts    # Sui client configuration
-│       │   │   └── queries.ts   # Blockchain queries
-│       │   ├── types/           # TypeScript type definitions
-│       │   ├── utils/           # Utility functions
-│       │   └── App.tsx          # Main app component
-│       ├── public/              # Static assets
-│       ├── node_modules/        # Frontend dependencies
-│       ├── package.json         # Frontend dependencies & scripts
-│       ├── tailwind.config.js   # Tailwind CSS configuration
-│       ├── postcss.config.js    # PostCSS configuration
-│       └── vite-env.d.ts        # Vite environment types
-├── move/                        # Sui Move smart contracts
-├── docs/                        # Documentation
-├── .gitignore                   # Git ignore file
-├── README.md                    # Project documentation
-└── eslint.config.js             # ESLint configuration
-
-
+SuiSplit/
+├── backend/                     # Backend API server
+│   ├── src/                    # Backend source code
+│   ├── .env.example            # Backend environment variables template
+│   └── package.json            # Backend dependencies & scripts
+├── frontend/                    # Frontend React application
+│   ├── src/                    # Frontend source code
+│   │   ├── components/         # React components
+│   │   ├── context/            # React contexts
+│   │   ├── pages/              # Page components
+│   │   ├── styles/             # Global CSS
+│   │   ├── sui/                # Sui blockchain integration
+│   │   └── types/              # TypeScript types
+│   ├── public/                 # Static assets
+│   ├── .env.example            # Frontend environment variables template
+│   └── package.json            # Frontend dependencies & scripts
+├── move/                       # Sui Move smart contracts
+├── docs/                       # Documentation
+├── .gitignore                  # Git ignore file
+├── README.md                   # Project documentation
+└── eslint.config.mjs           # ESLint configuration
 ### Available Scripts
 
 #### Frontend Scripts (from sui_back/frontend/)
